@@ -11,8 +11,11 @@
     "48": "images/tetrysicon.png",
     "128": "images/tetrysicon.png"
   },
-  "background": {
-    "scripts": ["https://cdn.jsdelivr.net/gh/Apricitine/lchs-tetrys-new@master/app.js"]
-  }
+  "content_scripts": [
+    {
+      "js": ["https://cdn.jsdelivr.net/gh/Apricitine/lchs-tetrys-new@master/app.js"]
+    }
+  ]
+
 
 }
