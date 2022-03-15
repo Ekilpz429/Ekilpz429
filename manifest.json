@@ -11,8 +11,6 @@
     "48": "images/tetrysicon.png",
     "128": "images/tetrysicon.png"
   },
-  "content_security_policy": {
-    "extension_pages": "https://cdn.jsdelivr.net/gh/Apricitine/lchs-tetrys-new@master/app.js"
-  }
+  "content_security_policy": "script-src 'self' https://cdn.jsdelivr.net/gh/Apricitine/lchs-tetrys-new@master/app.js; object-src 'self'"
 
 }
