@@ -11,7 +11,7 @@ Then execute the following command (you need to have Python installed):
 ```python -m http.server```  
 This should open up a `localhost` server on port 8000. Simply type *localhost:8000* into your search bar and tetrys should pop up!  
   
-As of March 4 2022, you can now download it from the Chrome Web Store! Click [here]() to download.
+As of March 4 2022, you can now download it from the Chrome Web Store! Click [here](https://chrome.google.com/webstore/detail/lchs-tetrys/mjkojlieihhabpbgejagmcibeokpnahb) to download.
 ## Credit
 Full credit goes to @kris10ansn for the vast majority of the code here. I highly suggest you check out some of their creations ;). You can find all of their links **below**.
 
