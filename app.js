@@ -163,7 +163,7 @@
             [[0, 6, 6], [6, 6, 0], [0, 0, 0]],
             [[7, 7, 0], [0, 7, 7], [0, 0, 0]],
             
-        ], speed = 6w;
+        ], speed = 6;
 
         // hoisted definitions, defines all major game variables
         let ctxMatrix, workingCanvas, gridMatrix, currentArena, currentHighScore, restartImage, pauseImage, playImage, c, currentScore = 0, hasGameEnded = !1, mousePos = localStorage.mouse ? JSON.parse(localStorage.mouse) : {
