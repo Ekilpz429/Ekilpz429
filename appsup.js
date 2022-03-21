@@ -49,8 +49,7 @@
                 }
                 .bind(null, n));
         return o
-    }
-    ,
+    },
     r.n = function(e) {
         var t = e && e.__esModule ? function() {
             return e.default
@@ -65,8 +64,7 @@
     ,
     r.o = function(e, t) {
         return Object.prototype.hasOwnProperty.call(e, t)
-    }
-    ,
+    },
     r.p = "",
     r(r.s = 0)
 }([function(e, t) {
@@ -138,11 +136,18 @@
             null == N && E();
             requestAnimationFrame(_)
         }()
-    }
-    ;
-    const r = [null, "#e84a4a", "#e89c4a", "#e8db4a", "#9ce84a", "#4ae86c", "#4ae8c6", "#4a89e8"];
-    shapes = [[[1, 1, 1], [0, 1, 0], [0, 0, 0]], [[2, 2], [2, 2]], [[0, 0, 3, 0], [0, 0, 3, 0], [0, 0, 3, 0], [0, 0, 3, 0]], [[0, 4, 0], [0, 4, 0], [0, 4, 4]], [[0, 5, 0], [0, 5, 0], [5, 5, 0]], [[0, 6, 6], [6, 6, 0], [0, 0, 0]], [[7, 7, 0], [0, 7, 7], [0, 0, 0]]],
-    speed = 7;
+    };
+    //const r = [null, "#e84a4a", "#e89c4a", "#e8db4a", "#9ce84a", "#4ae86c", "#4ae8c6", "#4a89e8"];
+    const r = [null, "#ff00aa", "#ff00aa", "#ff00aa", "#ff00aa", "#ff00aa", "#ff00aa", "#ff00aa", ];
+    shapes = [
+        [[1, 1, 1], [0, 1, 0], [0, 0, 0]], 
+        [[2, 2], [2, 2]], 
+        [[0, 0, 3, 0], [0, 0, 3, 0], [0, 0, 3, 0], [0, 0, 3, 0]], 
+        [[0, 4, 0], [0, 4, 0], [0, 4, 4]], 
+        [[0, 5, 0], [0, 5, 0], [5, 5, 0]], 
+        [[0, 6, 6], [6, 6, 0], [0, 0, 0]], 
+        [[7, 7, 0], [0, 7, 7], [0, 0, 0]]
+    ],speed = 7;
     let o, n, l, i, a, s, f, h, c, u = 0, g = !1, d = localStorage.mouse ? JSON.parse(localStorage.mouse) : {
         x: 0,
         y: 0
