@@ -174,7 +174,7 @@
         ctxMatrix.fillStyle = "black",
         ctxMatrix.fillRect(0, 0, workingCanvas.width, workingCanvas.height),
         ctxMatrix.fillStyle = "red",
-        ctxMatrix.fillRect(0, 3 * gridMatrix - 1, workingCanvas.width, 1),
+        ctxMatrix.fillRect(0, 3 * gridMatrix - 1, workingCanvas.width, 4),
         O(currentArena, {
             x: 0,
             y: 0
