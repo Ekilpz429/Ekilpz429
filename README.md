@@ -17,6 +17,6 @@ Full credit goes to @kris10ansn for the vast majority of the code here. I highly
 
 > [GitHub](https://github.com/kris10ansn)  
 > [Twitter](https://twitter.com/kris10ansn)  
-> [Webpage](https://kris10ansn.github.io/)    
+> [Website](https://kris10ansn.github.io/)    
 
 Have fun!
