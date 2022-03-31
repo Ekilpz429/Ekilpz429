@@ -1,74 +1,77 @@
 <!DOCTYPE html>
 <html style="height: 540px">
-    <head>
-        <title>LCHS Tetrys</title>
-        <link rel = "shortcut icon" type = "image/x-icon" href = "images/kirblob.png">
-        <style id="styles">
-            html,body {
-              overflow-y: hidden;
-              font-family: Arial,Helvetica,sans-serif;
-              margin: none;
-              padding: none;
-            }
+  <head>
+    <title>LCHS Tetrys</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/kirblob.png" />
+    <style id="styles">
+      html,
+      body {
+        overflow-y: hidden;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: none;
+        padding: none;
+      }
 
-            body {
-              background: #222;
-              margin: 3px;
-              width: 300px
-            }
+      body {
+        background: #222;
+        margin: 3px;
+        width: 300px;
+      }
 
-            * {
-              padding: 0;
-              margin: 0;
-              box-sizing: border-box;
-            }
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
 
-            *[hidden] {
-              display: none !important
-            }
+      *[hidden] {
+        display: none !important;
+      }
 
-            canvas {
-              display: block;
-              width: 300px;
-              height: 540px;
-              box-sizing: border-box;
-              border-radius: 12px;
-            }
+      canvas {
+        display: block;
+        width: 300px;
+        height: 540px;
+        box-sizing: border-box;
+        border-radius: 12px;
+      }
 
-            div.background {
-              z-index: -1;
-            }
+      div.background {
+        z-index: -1;
+      }
 
-            div.black-canvas-box {
-              position: absolute;
-              width: 294px;
-              height: 534px;
-              margin: 3px;
-              box-sizing: border-box;
-              background: transparent;
-            }
+      div.black-canvas-box {
+        position: absolute;
+        width: 294px;
+        height: 534px;
+        margin: 3px;
+        box-sizing: border-box;
+        background: transparent;
+      }
 
-            div.red-line {
-              position: absolute;
-              top: 91px;
-              left: 3px;
-              width: 294px;
-              background: rgb(255, 50, 50);
-            }
+      div.red-line {
+        position: absolute;
+        top: 91px;
+        left: 3px;
+        width: 294px;
+        background: rgb(255, 50, 50);
+      }
 
-            span {
-              text-align: center;
-              color: hsl(0, 0%, 80%);
-            }
-        </style>
-        <meta charset="UTF-8">
-    </head>
-   
-    <body>
-        <div class="background red-line"></div>
-        <canvas id="canvas" width="450" height="810"></canvas>
-        <script src = "appsup.js"></script>      
-        <span>Colors are normal again! No playing in class, coming updates will make sure of that. ;)</span>
-    </body>
+      span {
+        text-align: center;
+        color: hsl(0, 0%, 80%);
+      }
+    </style>
+    <meta charset="UTF-8" />
+  </head>
 
+  <body>
+    <div class="background red-line"></div>
+    <canvas id="canvas" width="450" height="810"></canvas>
+    <script src="appsup.js"></script>
+    <span
+      >Colors are normal again! No playing in class, coming updates will make
+      sure of that. ;)</span
+    >
+  </body>
 </html>
