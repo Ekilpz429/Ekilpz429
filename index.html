@@ -61,17 +61,23 @@
         text-align: center;
         color: hsl(0, 0%, 80%);
       }
+
+      div[outer-radical] {
+        background: rgb(127, 127, 127);    
+        border-radius: 20px;
+      }
     </style>
     <meta charset="UTF-8" />
   </head>
 
   <body>
-    <div class="background red-line"></div>
-    <canvas id="canvas" width="450" height="810"></canvas>
-    <script src="appsup.js"></script>
-    <span
-      >Colors are normal again! No playing in class, coming updates will make
-      sure of that. ;)</span
-    >
+    <div outer-radical>
+      <div class="background red-line"></div>
+      <canvas id="canvas" width="450" height="810"></canvas>
+      <script src="appsup.js"></script>
+      <span>Colors are normal again! No playing in class, coming updates will make
+        sure of that. ;)
+      </span>
+    </div>
   </body>
 </html>

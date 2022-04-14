@@ -343,7 +343,7 @@
                     }),
                         hasGameEnded = !0,
                         void callJSONStrings(!1);
-                E()
+                E();
             }
         }
         function E() {
