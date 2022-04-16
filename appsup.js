@@ -1,4 +1,24 @@
-!(function (e) {
+// let date = new Date();
+// const dateMethod = {
+//   gd(dateObj = date) {
+//     return [
+//       dateObj.getDay(),
+//       (dateObj.getHours() * 60) + dateObj.getMinutes()
+//     ];
+//   },
+//   ghm(minutesValue, dateObj = date) {
+//     let numOfMinutes = minutesValue - (date.getHours() * 60);
+//     return [, numOfMinutes]
+//   },
+//   between : function(a, b, includeEndNumbers = false) {
+//     var min = Math.min.apply(Math, [a, b]),
+//       max = Math.max.apply(Math, [a, b]);
+//     return includeEndNumbers ? this >= min && this <= max : this > min && this < max;
+//   }
+// }
+// console.log(gd());
+
+(function (e) {
   var t = {};
   function r(ctxMatrix) {
     if (t[ctxMatrix]) return t[ctxMatrix].exports;
@@ -43,11 +63,11 @@
       var ctxMatrix = Object.create(null);
       if (
         (r.r(ctxMatrix),
-        Object.defineProperty(ctxMatrix, "default", {
-          enumerable: !0,
-          value: e,
-        }),
-        2 & t && "string" != typeof e)
+          Object.defineProperty(ctxMatrix, "default", {
+            enumerable: !0,
+            value: e,
+          }),
+          2 & t && "string" != typeof e)
       )
         for (var workingCanvas in e)
           r.mousePos(
@@ -63,11 +83,11 @@
       var t =
         e && e.__esModule
           ? function () {
-              return e.default;
-            }
+            return e.default;
+          }
           : function () {
-              return e;
-            };
+            return e;
+          };
       return r.mousePos(t, "currentHighScore", t), t;
     }),
     (r.ctxMatrix = function (e, t) {
@@ -78,11 +98,11 @@
 })([
   function (e, t) {
     window.onload = function () {
-      (workingCanvas = document.getElementById("canvas")),
+      (workingCanvas = document.querySelector("canvas")),
         (ctxMatrix = workingCanvas.getContext("2d")),
         (gridMatrix = workingCanvas.width / 10),
         void 0 === localStorage._scoreResetSept2018 &&
-          ((localStorage._hscore = currentHighScore = 0),
+        ((localStorage._hscore = currentHighScore = 0),
           (localStorage._scoreResetSept2018 = !0)),
         (function () {
           clearInterval(e), clearInterval(t);
@@ -134,12 +154,12 @@
               }
               try {
                 null == localStorage._hscore ||
-                "undefined" == localStorage._hscore
+                  "undefined" == localStorage._hscore
                   ? (highScore = localStorage._hscore = 0)
                   : (highScore = JSON.parse(localStorage._hscore)),
                   (currentScore =
                     null == localStorage._score ||
-                    "undefined" == localStorage._score
+                      "undefined" == localStorage._score
                       ? (localStorage._score = 0)
                       : JSON.parse(localStorage._score)),
                   (N = JSON.parse(localStorage._player));
@@ -163,7 +183,7 @@
         })();
     };
     //const r = [null, "#e84a4a", "#e89c4a", "#e8db4a", "#9ce84a", "#4ae86c", "#4ae8c6", "#4a89e8"];
-    const r = [
+    const colors = [
       null,
       "#ff8fb4",
       "#87ffc9",
@@ -210,7 +230,7 @@
         [0, 0, 0],
       ],
     ]),
-      (speed = 7);
+      (speed = 10);
     let ctxMatrix,
       workingCanvas,
       gridMatrix,
@@ -225,9 +245,9 @@
       mousePos = localStorage.mouse
         ? JSON.parse(localStorage.mouse)
         : {
-            x: 0,
-            y: 0,
-          },
+          x: 0,
+          y: 0,
+        },
       y = !1,
       p = !1,
       S = 0;
@@ -246,8 +266,8 @@
               ctxMatrix.fillText(
                 e,
                 workingCanvas.width / 2 -
-                  ctxMatrix.measureText(e).width / 2 +
-                  t,
+                ctxMatrix.measureText(e).width / 2 +
+                t,
                 8 * gridMatrix + t
               );
             let r = "Press any key to restart";
@@ -256,8 +276,8 @@
               ctxMatrix.fillText(
                 r,
                 workingCanvas.width / 2 -
-                  ctxMatrix.measureText(r).width / 2 +
-                  t,
+                ctxMatrix.measureText(r).width / 2 +
+                t,
                 9 * gridMatrix + t
               ),
               (ctxMatrix.font = gridMatrix + "px Arial"),
@@ -275,24 +295,24 @@
                 9 * gridMatrix
               );
           })(),
-        (ctxMatrix.fillStyle = "black"),
-        ctxMatrix.fillRect(0, 0, workingCanvas.width, workingCanvas.height),
-        (ctxMatrix.fillStyle = "red"),
-        ctxMatrix.fillRect(0, 3 * gridMatrix - 1, workingCanvas.width, 4),
-        O(currentArena, {
-          x: 0,
-          y: 0,
-        }),
-        O(N.shape, {
-          x: N.x,
-          y: N.y,
-        }),
-        F(),
-        (x = e - v),
-        (v = e),
-        (m += x),
-        m > w && !hasGameEnded && !p && (I(), (m = 0)),
-        null == currentHighScore)
+          (ctxMatrix.fillStyle = "black"),
+          ctxMatrix.fillRect(0, 0, workingCanvas.width, workingCanvas.height),
+          (ctxMatrix.fillStyle = "red"),
+          ctxMatrix.fillRect(0, 3 * gridMatrix - 1, workingCanvas.width, 4),
+          O(currentArena, {
+            x: 0,
+            y: 0,
+          }),
+          O(N.shape, {
+            x: N.x,
+            y: N.y,
+          }),
+          F(),
+          (x = e - v),
+          (v = e),
+          (m += x),
+          m > w && !hasGameEnded && !p && (I(), (m = 0)),
+          null == currentHighScore)
       )
         try {
           currentHighScore = localStorage._hscore;
@@ -305,7 +325,7 @@
         ctxMatrix.fillText(
           currentScore,
           workingCanvas.width / 2 -
-            ctxMatrix.measureText(currentScore).width / 2,
+          ctxMatrix.measureText(currentScore).width / 2,
           2.5 * gridMatrix
         ),
         (ctxMatrix.font = 0.5 * gridMatrix + "px Arial"),
@@ -313,17 +333,17 @@
         ctxMatrix.fillText(
           "High score: " + currentHighScore,
           workingCanvas.width / 2 -
-            ctxMatrix.measureText("High score: " + currentHighScore).width / 2,
+          ctxMatrix.measureText("High score: " + currentHighScore).width / 2,
           3.5 * gridMatrix
         ),
         (function () {
           (this.offset = 1),
             (this.hoverSize = gridMatrix / 5),
             mousePos.x > gridMatrix * this.offset - this.hoverSize &&
-            mousePos.x <
+              mousePos.x <
               gridMatrix * this.offset + gridMatrix + 2 * this.hoverSize &&
-            mousePos.y > gridMatrix * this.offset - this.hoverSize &&
-            mousePos.y <
+              mousePos.y > gridMatrix * this.offset - this.hoverSize &&
+              mousePos.y <
               gridMatrix * this.offset + gridMatrix + 2 * this.hoverSize
               ? ((y = !0),
                 (ctxMatrix.fillStyle = "#3a3a3a"),
@@ -347,9 +367,9 @@
             (this.offsetY = 1),
             (this.hoverSize = gridMatrix / 5),
             mousePos.x > gridMatrix * this.offsetX - this.hoverSize &&
-            mousePos.x < gridMatrix * this.offsetX + gridMatrix + offsetX &&
-            mousePos.y > gridMatrix * this.offsetY - this.hoverSize &&
-            mousePos.y < gridMatrix * this.offsetY + gridMatrix + offsetY
+              mousePos.x < gridMatrix * this.offsetX + gridMatrix + offsetX &&
+              mousePos.y > gridMatrix * this.offsetY - this.hoverSize &&
+              mousePos.y < gridMatrix * this.offsetY + gridMatrix + offsetY
               ? ((c = !0),
                 (ctxMatrix.fillStyle = "#3a3a3a"),
                 ctxMatrix.fillRect(
@@ -372,19 +392,19 @@
           for (let e = currentArena.length - 1; e >= 0; e--)
             currentArena[e].every((e) => e > 0) &&
               (currentArena.splice(e, 1),
-              currentArena.splice(
-                0,
-                0,
-                new Array(currentArena[1].length).fill(0)
-              ),
-              (currentScore += S),
-              (S *= 2));
+                currentArena.splice(
+                  0,
+                  0,
+                  new Array(currentArena[1].length).fill(0)
+                ),
+                (currentScore += S),
+                (S *= 2));
         })(),
         requestAnimationFrame(createGameArena);
     }
     function b(e, t) {
       let r = [];
-      for (; t--; ) r.push(new Array(e).fill(0));
+      for (; t--;) r.push(new Array(e).fill(0));
       return r;
     }
     function O(e, t) {
@@ -395,13 +415,13 @@
           currentArena++
         )
           0 !== e[workingCanvas][currentArena] &&
-            ((ctxMatrix.fillStyle = r[e[workingCanvas][currentArena]]),
-            ctxMatrix.fillRect(
-              (t.x + currentArena) * gridMatrix,
-              (t.y + workingCanvas) * gridMatrix,
-              gridMatrix,
-              gridMatrix
-            ));
+            ((ctxMatrix.fillStyle = colors[e[workingCanvas][currentArena]]),
+              ctxMatrix.fillRect(
+                (t.x + currentArena) * gridMatrix,
+                (t.y + workingCanvas) * gridMatrix,
+                gridMatrix,
+                gridMatrix
+              ));
     }
     function k(e, t) {
       for (let t = 0; t < e.length; ++t)
@@ -412,12 +432,12 @@
       try {
         currentScore > currentHighScore &&
           ((currentHighScore = currentScore),
-          (localStorage._hscore = JSON.stringify(currentHighScore))),
+            (localStorage._hscore = JSON.stringify(currentHighScore))),
           (localStorage._end = JSON.stringify(hasGameEnded)),
           (localStorage._score = JSON.stringify(currentScore)),
           (localStorage._arena = JSON.stringify(currentArena)),
           (localStorage._player = JSON.stringify(N));
-      } catch (e) {}
+      } catch (e) { }
     }
     function z(e) {
       const t = window.getComputedStyle(workingCanvas),
@@ -454,44 +474,44 @@
     function I() {
       if (
         ((m = 0),
-        N.y + N.shape.length - 1 - A(N.shape) < 0 && (N.x = N.start_x),
-        N.x + N.shape.length - 1 - M(N.shape) > currentArena[0].length - 1 &&
+          N.y + N.shape.length - 1 - A(N.shape) < 0 && (N.x = N.start_x),
+          N.x + N.shape.length - 1 - M(N.shape) > currentArena[0].length - 1 &&
           (N.x = currentArena[0].length - N.shape.length + M(N.shape)),
-        N.x + R(N.shape) < 0 && (N.x = 0 - R(N.shape)),
-        N.y++,
-        T() || N.y > currentArena.length - N.shape.length + A(N.shape))
+          N.x + R(N.shape) < 0 && (N.x = 0 - R(N.shape)),
+          N.y++,
+          T() || N.y > currentArena.length - N.shape.length + A(N.shape))
       ) {
         if (
           ((currentScore += 10),
-          N.y--,
-          (function (e, t) {
-            const r = e.shape;
-            for (let ctxMatrix = 0; ctxMatrix < r.length; ctxMatrix++)
-              for (
-                let workingCanvas = 0;
-                workingCanvas < r.length;
-                workingCanvas++
-              )
-                if (
-                  r[ctxMatrix][workingCanvas] &&
-                  0 !== r[ctxMatrix][workingCanvas]
+            N.y--,
+            (function (e, t) {
+              const r = e.shape;
+              for (let ctxMatrix = 0; ctxMatrix < r.length; ctxMatrix++)
+                for (
+                  let workingCanvas = 0;
+                  workingCanvas < r.length;
+                  workingCanvas++
                 )
-                  try {
-                    t[e.y + ctxMatrix][e.x + workingCanvas] =
-                      r[ctxMatrix][workingCanvas];
-                  } catch (e) {
-                    console.error(e);
-                  }
-          })(N, currentArena),
-          (function (e) {
-            let t = 0;
-            return (
-              e.forEach((e) => {
-                t += e;
-              }),
-              t
-            );
-          })(currentArena[2]) > 0)
+                  if (
+                    r[ctxMatrix][workingCanvas] &&
+                    0 !== r[ctxMatrix][workingCanvas]
+                  )
+                    try {
+                      t[e.y + ctxMatrix][e.x + workingCanvas] =
+                        r[ctxMatrix][workingCanvas];
+                    } catch (e) {
+                      console.error(e);
+                    }
+            })(N, currentArena),
+            (function (e) {
+              let t = 0;
+              return (
+                e.forEach((e) => {
+                  t += e;
+                }),
+                t
+              );
+            })(currentArena[2]) > 0)
         )
           return (
             O(currentArena, {
@@ -571,11 +591,11 @@
               !(function (e) {
                 const t = N.x;
                 let r = 1;
-                for (k(N.shape, e); T(); )
+                for (k(N.shape, e); T();)
                   if (
                     ((N.x += r),
-                    (r = -(r + (r > 0 ? 1 : -1))),
-                    r > N.shape[0].length)
+                      (r = -(r + (r > 0 ? 1 : -1))),
+                      r > N.shape[0].length)
                   )
                     return k(N.shape, -e), void (N.x = t);
               })(1);
