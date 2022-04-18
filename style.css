@@ -4,10 +4,6 @@
   user-select: none;
 }
 
-html {
-  height: 540px;
-}
-
 body {
   overflow-y: hidden;
   font-family: 'Courier New', Courier, monospace;
@@ -52,8 +48,17 @@ div[outer-radical] {
   background: rgb(127, 127, 127);
   border-radius: 20px;
   padding: 5%;
+  height: auto;
   width: 110%;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+
+div[bottom-text] {
+  color: white;
+  font-size: 0.8rem;
+  margin-top: 5%;
+  font-weight: bold;
 }
