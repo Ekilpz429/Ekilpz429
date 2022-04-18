@@ -11,12 +11,17 @@
   display: none !important;
 }
 
+html {
+  width: calc(300px + 40px);
+}
+
 body {
   font-family: 'Courier New', Courier, monospace;
   margin: 0;
   padding: none;
   margin: 3px;
   width: auto;
+  background: rgb(0, 0, 0);
 }
 
 canvas {
@@ -28,7 +33,7 @@ canvas {
 }
 
 div[outer-radical] {
-  background: rgb(127, 127, 127);
+  background: rgb(63, 63, 63);
   border-radius: 20px;
   padding: 5%;
   height: auto;
