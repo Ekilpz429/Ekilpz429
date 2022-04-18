@@ -2,30 +2,21 @@
   -ms-user-select: none;
   -webkit-user-select: none;
   user-select: none;
-}
-
-body {
-  overflow-y: hidden;
-  font-family: 'Courier New', Courier, monospace;
-  margin: 0;
-  padding: none;
-}
-
-body {
-  background: #222;
-  margin: 3px;
-  width: 300px;
-}
-
-* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  overflow: visible;
 }
 
 *[hidden] {
   display: none !important;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: none;
+  margin: 3px;
+  width: auto;
 }
 
 canvas {
@@ -36,20 +27,12 @@ canvas {
   border-radius: 12px;
 }
 
-div.red-line {
-  position: absolute;
-  top: 91px;
-  left: 3px;
-  width: 294px;
-  background: rgb(255, 50, 50);
-}
-
 div[outer-radical] {
   background: rgb(127, 127, 127);
   border-radius: 20px;
   padding: 5%;
   height: auto;
-  width: 110%;
+  width: calc(300px + 10%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,4 +44,9 @@ div[bottom-text] {
   font-size: 0.8rem;
   margin-top: 5%;
   font-weight: bold;
+}
+
+span[strong-num] {
+  font-weight: 900;
+  font-size: 0.85rem;
 }
