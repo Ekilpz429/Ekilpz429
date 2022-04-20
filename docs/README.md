@@ -1,5 +1,5 @@
 # LCHS-Tetrys  
-Tetrys is **BACK** *baby*!  
+Tetrys is **BACK** *baby*!!  
 This is an extension built on <a style = "color: red;" href = "https://github.com/kris10ansn">@kris10ansn's</a> popular Tetrys game made for the LCHS bell schedule.  
 Following the complete ban of the first Tetrys game, I decided to build one on top of the orginal to create one allowing people to play the game during non-class periods (or during class periods with a special token).  
 This extension also has several aesthical updates to the original.
